@@ -1,0 +1,81 @@
+<addons>
+<addon id="plugin.program.forceclose" name="Force Close kodi" version="1.0.3" provider-name="kodi senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Force Close Kodi</summary>
+    <description lang="he">כיבוי בכח של קודי</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.program.senyortools" name="senyor tools" version="1.1.1" provider-name="kodi senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">senyor tools</summary>
+    <description lang="en">kodi-senyor.co.il kodi tools and tweaks</description>
+	 <description lang="he">הרחבה ייחודית של קודי סניור המאפשרת התקנת הרחבות והגדרות מערכת בקליק אחד</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.video.anarchitv"
+       name="[COLOR yellow]AnarchiTV[/COLOR]"
+       version="1.0.8"
+       provider-name="kodi senyor">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>AnarchiTV</summary>
+    <description>
+	[COLOR yellow]kodi-senyor.co.il and anarchitv.co[/COLOR] AnarchiTV Live tv channels
+    </description>
+	<license>http://www.gnu.org/licenses/</license>
+    <website>http://kodi-senyor.co.il</website>
+    <email></email>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.program.senyorwizard" name="senyor wizard" version="1.0.5" provider-name="Kodi Senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">senyor wizard</summary>
+    <description lang="en">Easy Install Full KODI Build.</description>
+    <description lang="he">התקנת קודי עם כל ההרחבות הכי טובות בקליק אחד</description>
+    <disclaimer lang="en">Visit Abeksis.com for more info.</disclaimer>
+    <disclaimer lang="he">בקרו באתר http://kodi-senyor.co.il</disclaimer>
+    <source>http://kodi-senyor.co.il</source>
+    <website>http://kodi-senyor.co.il</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.program.KodiBuildsIL" name="Kodi Builds IL wizard" version="1.0.4" provider-name="kodi senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Kodi Builds IL Wizard</summary>
+    <description lang="en">Kodi Builds IL kodi builds</description>
+	<description lang="he">Kodi Builds IL בילדים מוכנים לקודי מהאתר</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
