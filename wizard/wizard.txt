@@ -1,0 +1,5 @@
+﻿name="senyor kodi v16 pro wizard"
+url="https://archive.org/download/senyor_kodi_v16_pro_wizard/senyor_kodi_v16_pro_wizard.zip"
+img="http://i141.photobucket.com/albums/r48/kobiko3030/senyor%20kodi%20wizard/splash_zpseuaueltd.png"
+fanart="http://i141.photobucket.com/albums/r48/kobiko3030/senyor%20kodi%20wizard/splash_zpslu1u29sa.jpg"
+description="קודי מותאם אישית על בסיס הסקין xonfluence שהוא גם סקין הבסיס אך משופר בצורה משמעותית"

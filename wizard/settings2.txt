@@ -1,0 +1,17 @@
+﻿name="Mike Mor salts auto settings"
+url="https://copy.com/KGHRHajuTWksaJXZ/salts_Mike_auto-settings.zip?download=1"
+img="http://i141.photobucket.com/albums/r48/kobiko3030/kodi%20senyor/senyor%20tools/2020_zps2iqkwktt.jpg"
+fanart="http://i141.photobucket.com/albums/r48/kobiko3030/kodi%20senyor/senyor%20tools/1_zpsa2lhgok0.jpg"
+description="הגדרה אוטומטית של מייק מור עבור ההרחבה סאלטס"
+
+name="Kodi Senyor salts auto settings"
+url="https://dl.orangedox.com/1fOcR27Wk2kDK0OaOj/salts_auto-settings.zip?dl=1"
+img="http://i141.photobucket.com/albums/r48/kobiko3030/kodi%20senyor/senyor%20tools/3030_zpspvpeuagy.jpg"
+fanart="http://i141.photobucket.com/albums/r48/kobiko3030/kodi%20senyor/senyor%20tools/1_zpswpe3rnyu.jpg"
+description="הגדרה אוטומטית של קובי סניור עבור ההרחבה סאלטס"
+
+name="AnarchTV pvr iptv simple auto settings"
+url="https://dl.orangedox.com/OcP1fUntka2HM2u8pC/pvranarchitv.senyortools.zip?dl=1"
+img="http://i141.photobucket.com/albums/r48/kobiko3030/4040_zps08mqeo4x.jpg"
+fanart="http://i141.photobucket.com/albums/r48/kobiko3030/kodi%20senyor/senyor%20tools/1_zpszaar3fyj.jpg"
+description="התקנת הגדרות לטלוויזיה חיה עבור אנרכי, יש להתקין, לאפשר טלוויזיה חיה ולאתחל את הקודי"
