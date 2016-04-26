@@ -1,0 +1,339 @@
+# XBMC Media Center language file
+# Addon Name: tvOS-X
+# Addon id: skin.tvOS-X
+# Addon version: 1.0.0
+# Addon Provider: iCanuck
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Skin tvOS-X\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2013-01-24 19:04+0000\n"
+"Last-Translator: iCanuck <icanuck0604@gmail.com>\n"
+"Language-Team: English (http://www.transifex.com/projects/p/tvOS-X-1/language/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31000"
+msgid "Page"
+msgstr "דף"
+
+msgctxt "#31001"
+msgid "Items"
+msgstr "פריטים"
+
+msgctxt "#31002"
+msgid "Karaoke Song"
+msgstr "שירי קריוקי"
+
+msgctxt "#31003"
+msgid "Choose Shortcut function for Music Icon : Albums  Artists Genres Songs"
+msgstr "בחר קיצור לאריח המוזיקה"
+
+msgctxt "#31005"
+msgid "End Time"
+msgstr "זמן סיום"
+
+msgctxt "#31006"
+msgid "Last Added"
+msgstr "נוסף לאחרונה"
+
+msgctxt "#31007"
+msgid "Last Started"
+msgstr "התחיל"
+
+msgctxt "#31008"
+msgid "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
+msgstr "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
+
+msgctxt "#31009"
+msgid "Recently Added Episodes"
+msgstr "פרקים שנוספו לאחרונה"
+
+msgctxt "#31010"
+msgid "Open playlist"
+msgstr "פתח רשימת צפיה"
+
+msgctxt "#31011"
+msgid "Save playlist"
+msgstr "שמור רשימת צפיה"
+
+msgctxt "#31012"
+msgid "Clear playlist"
+msgstr "נקה רשימת צפיה"
+
+msgctxt "#31014"
+msgid "Current Playlist"
+msgstr "רשימת צפיה עכשווית"
+
+msgctxt "#31015"
+msgid "Select Subtitle Add-on"
+msgstr "בחר הרחבת כתוביות"
+
+msgctxt "#31016"
+msgid "Last Updated"
+msgstr "עודכן לאחרונה"
+
+msgctxt "#31017"
+msgid "Choose Addon for Subtitles Search & Download"
+msgstr "בחירת כתובית להורדה"
+
+msgctxt "#31018"
+msgid "Choose Addon for Lyrics Search & Download"
+msgstr "Choose Addon for Lyrics Search & Download"
+
+msgctxt "#31019"
+msgid "Enable or Disable Clock On top right of All Pages (not while watching Movies).[CR]Home Menu Will show Time and date."
+msgstr "אפשר או בטל הצגת שעון ושורת RSS"
+
+msgctxt "#31020"
+msgid "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
+msgstr "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
+
+msgctxt "#31021"
+msgid "Memory Used:"
+msgstr "זיכרון בשימוש:"
+
+msgctxt "#31022"
+msgid "Specify Action for Power Icon in Home Menu"
+msgstr "הגדרת פעולה למסך הכיבוי בתפריט הבית"
+
+msgctxt "#31023"
+msgid "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
+msgstr "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
+
+msgctxt "#31024"
+msgid "Aired"
+msgstr "משודר"
+
+msgctxt "#31025"
+msgid "Playlist Options"
+msgstr "אפשרויות פלייליסט"
+
+msgctxt "#31026"
+msgid "Arial based"
+msgstr "Arial based"
+
+msgctxt "#31027"
+msgid "Last Added"
+msgstr "נוסף לאחרונה"
+
+msgctxt "#31028"
+msgid "Watchlist"
+msgstr "רשימת צפייה"
+
+msgctxt "#31029"
+msgid "Favourite"
+msgstr "מועדף"
+
+msgctxt "#31030"
+msgid "Custom Shelf Icon"
+msgstr "בחירת אייקון ראשי למסך הבית"
+
+msgctxt "#31031"
+msgid "Replace tvOS-X Icon on Shelf with A Picture of Your choice."
+msgstr "מחליף את אייקון מזג האוויר באייקון לבחירתכם"
+
+msgctxt "#31032"
+msgid "Log Off"
+msgstr "התנתק"
+
+msgctxt "#31033"
+msgid "Always Colored Menu Icons"
+msgstr "תמיד אייקונים צבעוניים"
+
+msgctxt "#31034"
+msgid "Click to Add Favourite to Home Page"
+msgstr "לחץ להוספת מועדף למסך הבית"
+
+msgctxt "#31035"
+msgid "Click to Pick Icon, Change Favourite or Remove Favourite"
+msgstr "לחץ לבחירת אייקון, החלפת או הסרת מועדף"
+
+msgctxt "#31036"
+msgid "Reset ALL skin settings to default"
+msgstr "איפוס הסקין למצב ברירת מחדל"
+
+msgctxt "#31037"
+msgid "Add-ons manager"
+msgstr "מנהל הרחבות"
+
+msgctxt "#31038"
+msgid "min"
+msgstr "מינימום"
+
+msgctxt "#31039"
+msgid "Record Animation on Shelf"
+msgstr "Record Animation on Shelf"
+
+msgctxt "#31040"
+msgid "Shelf items"
+msgstr "פריטים נבחרים קבוצות הרחבות"
+
+msgctxt "#31041"
+msgid "Active Scrollbars"
+msgstr "Active Scrollbars"
+
+msgctxt "#31044"
+msgid "View options dialog"
+msgstr "צפה בדיאלוג אפשרויות"
+
+msgctxt "#31045"
+msgid "Recent/Recommended Inverted First Item"
+msgstr "Recent/Recommended Inverted First Item"
+
+msgctxt "#31046"
+msgid "Customize What Is Displayed On Home Shelf."
+msgstr "עיצוב קבוצת הרחבות שיוצגו במסך הבית"
+
+msgctxt "#31047"
+msgid "Show Clock"
+msgstr "הצגת שעון ושורת RSS"
+
+msgctxt "#31048"
+msgid "Recommended"
+msgstr "מומלץ"
+
+msgctxt "#31049"
+msgid "Home menu Power button function"
+msgstr "הגדרת פעולת כפתור הכיבוי"
+
+msgctxt "#31050"
+msgid "Choose from menu"
+msgstr "בחר מהתפריט"
+
+msgctxt "#31051"
+msgid "Custom Shelf Shortcuts"
+msgstr "קבוצת מועדפים נבחרים"
+
+msgctxt "#31052"
+msgid "Home Page Customizer"
+msgstr "הגדרת אריחים במסך הבית"
+
+msgctxt "#31053"
+msgid "Link For Music Icon"
+msgstr "בחר קיצור לאריח המוזיקה"
+
+msgctxt "#31054"
+msgid "Enable Views Menu in order to change the way Items are presented to you."
+msgstr "אפשר שינוי תצוגות בתפריטים"
+
+msgctxt "#31055"
+msgid "Fullscreen player"
+msgstr "נגן במסך מלא"
+
+msgctxt "#31056"
+msgid "Change Icon"
+msgstr "שנה אייקון"
+
+msgctxt "#31057"
+msgid "Replace Item"
+msgstr "החלף פריט"
+
+msgctxt "#31059"
+msgid "LiveTV"
+msgstr "טלוויזיה חיה"
+
+msgctxt "#31060"
+msgid "Add"
+msgstr "הוסף"
+
+msgctxt "#31061"
+msgid "Cinema Experience"
+msgstr "תצוגת סינמה"
+
+msgctxt "#31062"
+msgid "Select Lyrics Add-on"
+msgstr "Select Lyrics Add-on"
+
+msgctxt "#31064"
+msgid "Fullscreen"
+msgstr "מסך מלא"
+
+msgctxt "#31065"
+msgid "Started Movies"
+msgstr "Started Movies"
+
+msgctxt "#31066"
+msgid "Recommended Episodes"
+msgstr "פרקים מומלצים"
+
+msgctxt "#31067"
+msgid "Top Albums"
+msgstr "אלבומים מובילים"
+
+msgctxt "#31068"
+msgid "Toggle Debug"
+msgstr "צפיה בהגדרות קודי"
+
+msgctxt "#31069"
+msgid "Custom Home Background"
+msgstr "בחירת רקע עבור מסך הבית"
+
+msgctxt "#31070"
+msgid "Choose a custom Homescreen Background"
+msgstr "בחר רקע למסך הבית"
+
+msgctxt "#31071"
+msgid "Custom Other Background"
+msgstr "בחירת רקע לתפריטים הפנימיים"
+
+msgctxt "#31072"
+msgid "Choose a custom Other Background"
+msgstr "בחר רקע עבור תפריטים פנימיים"
+
+msgctxt "#31073"
+msgid "Enable Home Banner Animation"
+msgstr "אפשר אנימציה במסך הבית"
+
+msgctxt "#31074"
+msgid "Enable ATV3 Style Home Selector. This setting will disable home icon zoom animation"
+msgstr "אפשר אנימצית אריח, מאפשר הגדלת אריח בזמן מעבר עליו"
+
+msgctxt "#31075"
+msgid "Coverflow"
+msgstr "Coverflow"
+
+msgctxt "#31076"
+msgid "Enable ATV3 Home Icon Slider"
+msgstr "אפשור סליידר אנימציה לאריחים"
+
+msgctxt "#31077"
+msgid "Disable Home Banner"
+msgstr "בטל סליידר במסך הבית"
+
+msgctxt "#31078"
+msgid "Enable Fanart background in videoviews"
+msgstr "אפשר פאנארט בהרחבות וידאו"
+
+msgctxt "#31079"
+msgid "Enable Sort Letter in views"
+msgstr "אפשר מיון אנלפביתי"
+
+msgctxt "#31080"
+msgid "3D Wall"
+msgstr "תצוגת תלת מימד"
+
+msgctxt "#31081"
+msgid "Click to Add Add-on to Home Page"
+msgstr "לחץ להוספת הרחבה למסך הבית"
+
+msgctxt "#31082"
+msgid "Specify Action for LiveTV Icon in Home Menu"
+msgstr "הגדרת פעולה עבור אריח טלוויזיה חיה במסך הבית"
+
+msgctxt "#31083"
+msgid "Home menu LiveTV button function"
+msgstr "      הגדרת כפתור טלוויזיה חיה     "
+
+msgctxt "#31084"
+msgid "LiveTV function"
+msgstr "LiveTV function"
+
+msgctxt "#31085"
+msgid "Channels"
+msgstr "ערוצים"
