@@ -337,3 +337,7 @@ msgstr "LiveTV function"
 msgctxt "#31085"
 msgid "Channels"
 msgstr "ערוצים"
+
+msgctxt "#31086"
+msgid "skin icons edit"
+msgstr "החלפת ערכות עיצוב דרך senyor tools"

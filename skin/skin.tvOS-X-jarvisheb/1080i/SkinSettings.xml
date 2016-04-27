@@ -84,6 +84,10 @@
             <label>31052</label>
             <onclick>ActivateWindow(1117)</onclick>
           </item>
+		  <item id="8" description="skin icons edit">
+            <label>31086</label>
+            <onclick>ActivateWindow(10001,plugin://plugin.program.senyortools)</onclick>
+          </item>
           <item id="18" description="Home Background">	
 			<visible>!IsEmpty(Skin.String(CustomBgHome))</visible>		  
             <label>$LOCALIZE[31069]</label>
