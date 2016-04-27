@@ -219,8 +219,8 @@
                     <visible>!Skin.HasSetting(hidevaddons)</visible>
                     <thumb>special://skin/icons/vaddons.png</thumb>
                     <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
-                    <onclick>ActivateWindow(10025,return)</onclick>
-                   <onclick>ActivateWindow(10025,root)</onclick>
+                    <onclick>ActivateWindow(Videos,Addons)</onclick>
+                   <onclick>ActivateWindow(Videos,Addons)</onclick>
                 </item>				
                 <item id="340">
                     <visible>!Skin.HasSetting(hidemovie)</visible>
