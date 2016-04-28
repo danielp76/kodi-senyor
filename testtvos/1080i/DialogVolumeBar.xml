@@ -30,10 +30,10 @@
           <top>150</top>
           <width>184</width>
           <height>9</height>
-          <texturebg border="6,0,6,0">progress/ProgressBG.png</texturebg>
-          <midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
-          <righttexture border="1,1,6,1">progress/ProgressR.png</righttexture>
-          <lefttexture border="6,1,1,1">progress/ProgressL.png</lefttexture>
+          <texturebg border="6,0,6,0">progress/vol/ProgressBG.png</texturebg>
+          <midtexture border="0,1,0,1">progress/vol/ProgressM.png</midtexture>
+          <righttexture border="1,1,6,1">progress/vol/ProgressR.png</righttexture>
+          <lefttexture border="6,1,1,1">progress/vol/ProgressL.png</lefttexture>
           <overlaytexture>-</overlaytexture>
           <info>Player.Volume</info>
         </control>

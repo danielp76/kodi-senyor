@@ -183,19 +183,23 @@
             <label>$LOCALIZE[31047]</label>
             <label2>106</label2>
             <onclick>Skin.ToggleSetting(ShowClock)</onclick>
-          </item>		  
+          </item>
+
+		  
           <item id="4" description="Scrollbars">
-            <visible>!Skin.HasSetting(Scrollbars_Active)</visible>
+            <visible>Skin.HasSetting(Scrollbars_Active)</visible>
             <label>$LOCALIZE[21383]</label>
             <label2>$LOCALIZE[107]</label2>
             <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
           </item>
           <item id="4" description="Scrollbars">
-            <visible>Skin.HasSetting(Scrollbars_Active)</visible>
+            <visible>!Skin.HasSetting(Scrollbars_Active)</visible>
             <label>$LOCALIZE[21383]</label>
             <label2>$LOCALIZE[106]</label2>
             <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
           </item>
+		  
+		  
           <item id="5" description="Options dialog">
             <visible>Skin.HasSetting(ViewsMenuOff)</visible>
             <label>$LOCALIZE[31044]</label>
@@ -207,7 +211,73 @@
             <label>$LOCALIZE[31044]</label>
             <label2>$LOCALIZE[107]</label2>
             <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
-          </item>		  
+          </item>
+
+
+          <item id="26" description="Disable NoFocusNoLabel">
+            <visible>Skin.HasSetting(NoFocusNoLabel)</visible>
+            <label>$LOCALIZE[31086]</label>
+            <label2>$LOCALIZE[107]</label2>
+            <onclick>Skin.ToggleSetting(NoFocusNoLabel)</onclick>
+          </item>
+          <item id="26" description="Disable NoFocusNoLabel">
+            <visible>!Skin.HasSetting(NoFocusNoLabel)</visible>
+            <label>$LOCALIZE[31086]</label>
+            <label2>$LOCALIZE[106]</label2>
+            <onclick>Skin.ToggleSetting(NoFocusNoLabel)</onclick>
+          </item>
+		  
+		  
+          <item id="27" description="Disable Icon View Info Bar">
+            <visible>Skin.HasSetting(NoIconViewShader)</visible>
+            <label>$LOCALIZE[31087]</label>
+            <label2>$LOCALIZE[107]</label2>
+            <onclick>Skin.ToggleSetting(NoIconViewShader)</onclick>
+          </item>
+          <item id="27" description="Disable Icon View Info Bar">
+            <visible>!Skin.HasSetting(NoIconViewShader)</visible>
+            <label>$LOCALIZE[31087]</label>
+            <label2>$LOCALIZE[106]</label2>
+            <onclick>Skin.ToggleSetting(NoIconViewShader)</onclick>
+          </item>	
+
+
+
+		  
+          <item id="28" description="ALT icon ViewShader Info Bar">
+            <visible>!Skin.HasSetting(NoIconViewShader) + Skin.HasSetting(ALTiconViewShader)</visible>
+            <label>$LOCALIZE[31089]</label>
+            <label2>$LOCALIZE[107]</label2><!-- YES -->
+            <onclick>Skin.ToggleSetting(ALTiconViewShader)</onclick>
+          </item>
+          <item id="28" description="ALT icon ViewShader Info Bar">
+            <visible>!Skin.HasSetting(NoIconViewShader) + !Skin.HasSetting(ALTiconViewShader)</visible>
+            <label>$LOCALIZE[31089]</label>
+            <label2>$LOCALIZE[106]</label2>
+            <onclick>Skin.ToggleSetting(ALTiconViewShader)</onclick>
+          </item>	
+
+
+	
+
+
+  
+          <item id="29" description="Disable Startup Splash">
+            <visible>Skin.HasSetting(hideStartupSplash)</visible>
+            <label>$LOCALIZE[31088]</label>
+            <label2>$LOCALIZE[107]</label2>
+            <onclick>Skin.ToggleSetting(hideStartupSplash)</onclick>
+          </item>
+          <item id="29" description="Disable Startup Splash">
+            <visible>!Skin.HasSetting(hideStartupSplash)</visible>
+            <label>$LOCALIZE[31088]</label>
+            <label2>$LOCALIZE[106]</label2>
+            <onclick>Skin.ToggleSetting(hideStartupSplash)</onclick>
+          </item>			  
+		  
+		  
+		  
+		  
           <item id="9" description="Quit button function">
             <label>$LOCALIZE[31049]</label>
             <label2 fallback="33061">$VAR[QuitLabelStatus]</label2>

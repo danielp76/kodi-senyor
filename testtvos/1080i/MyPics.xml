@@ -30,7 +30,7 @@
           <width>802</width>
           <height>891</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <onup>50</onup>
           <ondown>50</ondown>
           <pagecontrol>60</pagecontrol>
@@ -76,6 +76,7 @@
         </control>
       </control>
       <control type="scrollbar" id="60">
+		<visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <left>51r</left>
         <top>147</top>
         <height>882</height>
@@ -96,7 +97,7 @@
           <onup>noop</onup>
           <ondown>noop</ondown>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>
@@ -216,6 +217,7 @@
         <label>$INFO[ListItem.label][COLOR=Grey]$VAR[TopLabel,  ][/COLOR]</label>
       </control>
       <control type="scrollbar" id="60">
+	    <visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <left>45r</left>
         <top>144</top>
         <height>900</height>

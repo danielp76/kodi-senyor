@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
 <!-- HOME ATV4 ANIMATION (ZOOM) -->
   <include name="ATV4select">	
 	<animation effect="zoom" start="100" end="130" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
 	<animation effect="zoom" start="130" end="100" time="120" center="auto">unFocus</animation>
   </include>
-
 <!-- HOME ATV3 ANIMATION (SLIDER SELECTOR) -->
   <include name="ATV3select">
 	<control type="image">
@@ -33,7 +31,6 @@
 		<animation condition="Container(9000).Row(8)" effect="slide" end="0,779" time="200">Conditional</animation>		
 	</control>	
   </include>
-
  <!-- HOME BANNER ANIMATION -->
   <include name="homebanner_animation">	 
 	<animation condition="![Container(9000).Row(0)]" effect="slide" start="0,0" end="0,160" time="240">Conditonal</animation>
@@ -46,8 +43,7 @@
   <include name="homebanner_static">	 
     <animation condition="!Container(9000).Row(0)" effect="slide" start="0,0" end="0,-131" time="220">Conditonal</animation>
 	<animation condition="[![Container(9000).Row(0) | Container(9000).Row(1) | Container(9000).Row(2)]]" effect="slide" start="0,0" end="0,-900" time="220">Conditonal</animation>
-  </include> 
-  
+  </include>   
 <!-- LIST PANELS -- BUTTONSELECTOR-->
   <include name="right_listpanel_texfocus">	    
 	<texturefocus border="8">images/White.png</texturefocus>
@@ -66,15 +62,13 @@
   </include> 
   <include name="right_listpanel_focused_shadow">	
 	<texture>shadow.png</texture>
-  </include> 
-          
+  </include>          
 <!--SEEKBAR BACKGROUND -->
   <include name="seekbar_bkgd">	
 	<texture diffuse="images/WhiteTrans.png">$VAR[OtherBG]</texture>  
 	<!--texture colordiffuse="seekbar">images/White.png</texture-->	
 	<!--texture colordiffuse="77D7D7D7">images/White.png</texture-->	
-  </include>
-        
+  </include>        
   <include name="DialogButt">
     <width>576</width>
     <textoffsetx>0</textoffsetx>
@@ -220,7 +214,7 @@
         <texture>images/Line.png</texture>
       </control-->
     </control>
-  </include>
+  </include>  
   <include name="left_Panel_livetv">
     <control type="group" description="Thumbs with info">
       <top>80</top>
@@ -249,7 +243,7 @@
         <texture>images/Line.png</texture>
       </control-->
     </control>
-  </include>
+  </include>  
   <include name="left_Panel_plain">
     <control type="group" description="Thumbs no info">
       <animation effect="fade" delay="100" time="300">Visible</animation>
@@ -264,7 +258,7 @@
         <aspectratio aligny="center">keep</aspectratio>
       </control>
     </control>
-  </include>
+  </include> 
   <include name="left_Panel_square">
     <control type="group" description="Thumbs info">
       <visible>![Container.Content(Movies) | Container.Content(Seasons) | Container.Content(tvshows) | Container.Content(Songs)]</visible>
@@ -335,7 +329,7 @@
         </control>
       </control>
     </control>
-  </include>
+  </include>  
   <include name="SlimListItemCount">
     <animation effect="slide" start="0,0" end="0,-405" time="0" condition="StringCompare(Container.NumItems,1)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-324" time="0" condition="StringCompare(Container.NumItems,2)">conditional</animation>
@@ -346,21 +340,22 @@
     <animation effect="slide" start="0,0" end="0,-162" time="0" condition="StringCompare(Container.NumItems,7)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-81" time="0" condition="StringCompare(Container.NumItems,8)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-81" time="0" condition="StringCompare(Container.NumItems,9)">conditional</animation>
-  </include>
+  </include> 
   <include name="LargeListItemCount">
     <animation effect="slide" start="0,0" end="0,-333" time="0" condition="StringCompare(Container.NumItems,1)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-222" time="0" condition="StringCompare(Container.NumItems,2)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-222" time="0" condition="StringCompare(Container.NumItems,3)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-111" time="0" condition="StringCompare(Container.NumItems,4)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-111" time="0" condition="StringCompare(Container.NumItems,5)">conditional</animation>
-  </include>
+  </include>  
   <include name="FullscreenInfoLabel">
     <left>400</left>
     <width>1120</width>
     <scroll>false</scroll>
     <align>center</align>
-    <font>size42B</font>
-    <textcolor>Yellow</textcolor>
+    <font>size42</font>
+    <textcolor>textcolor2</textcolor>
+	<shadowcolor>-</shadowcolor>
   </include>
   <include name="MusicInfo">
     <control type="group" description="Songs and Music Videos">
@@ -548,7 +543,6 @@
     <control type="image">
       <animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !IsEmpty(ListItem.Premiered)">Conditional</animation>
       <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-
       <visible>!IsEmpty(ListItem.VideoResolution)</visible>
       <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
       <left>81r</left>
@@ -572,7 +566,6 @@
     <control type="image">
       <animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !IsEmpty(ListItem.Premiered)">Conditional</animation>
       <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-
       <visible>!IsEmpty(ListItem.VideoResolution)</visible>
       <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
       <left>81r</left>
@@ -619,7 +612,6 @@
       </control>
     </control>
   </include>
-  
   <include name="Unwatched_Fanart">
       <control type="label" description="Label2">
 
@@ -633,15 +625,7 @@
 		<shadowcolor>Black</shadowcolor>
         <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
       </control>
-  </include>
-
-
-
-
-
-
-
-  
+  </include> 
   <include name="Arrow">
     <control type="image" description="arrow">
       <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | ListItem.IsCollection  | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
@@ -705,12 +689,12 @@
       </control>	
       <control type="group">
         <control type="image">
-          <left>9</left>
-          <top>9</top>
-          <height>93</height>
-          <width>93</width>
+          <left>10</left>
+          <top>5</top>
+          <height>90</height>
+          <width>90</width>
           <texture background="true">$INFO[ListItem.Icon]</texture>
-          <aspectratio>keep</aspectratio>
+          <aspectratio>scale</aspectratio>
         </control>
       </control>
       <control type="label" description="Main Label">
@@ -748,10 +732,10 @@
           <include>right_listpanel_focused</include>
         </control>	  
         <control type="image">
-          <left>9</left>
-          <top>9</top>
-          <height>93</height>
-          <width>93</width>
+          <left>10</left>
+          <top>5</top>
+          <height>90</height>
+          <width>90</width>
           <texture background="true">$INFO[ListItem.Icon]</texture>
           <aspectratio>keep</aspectratio>
         </control>
@@ -1043,7 +1027,7 @@
     <onup>303</onup>
     <ondown>50</ondown>
     <left>72</left>
-    <top>120</top>
+    <top>240</top>
     <width>1776</width>
     <height>402</height>
     <orientation>horizontal</orientation>
@@ -1065,7 +1049,7 @@
         <width>303</width>
         <height>303</height>
         <texture background="true">default$INFO[ListItem.label2].png</texture>
-        <colordiffuse>33FFFFFF</colordiffuse>
+        <colordiffuse>FFFFFFFF</colordiffuse>
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
@@ -1078,6 +1062,9 @@
       </control>
     </itemlayout>
     <focusedlayout height="357" width="354">
+	 <control type="group">
+		<animation effect="zoom" start="100" end="115" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+		<animation effect="zoom" start="115" end="100" time="120" center="auto">unFocus</animation>		
       <control type="label">
         <centerleft>178</centerleft>
         <top>178</top>
@@ -1094,9 +1081,18 @@
         <width>303</width>
         <height>303</height>
         <texture background="true">default$INFO[ListItem.label2].png</texture>
-        <colordiffuse>33FFFFFF</colordiffuse>
+        <colordiffuse>FFFFFFFF</colordiffuse>
         <aspectratio>scale</aspectratio>
       </control>
+      <control type="image">
+	    <visible>!IsEmpty(ListItem.Thumb)</visible>	  
+        <left>7</left>
+        <top>27</top>
+        <width>343</width>
+        <height>373</height>
+        <texture>shadow.png</texture>
+        <aspectratio>stretch</aspectratio>
+      </control>	  
       <control type="image">
         <left>27</left>
         <top>27</top>
@@ -1105,20 +1101,23 @@
         <texture background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
-      <control type="image">
+      <!--control type="image">
         <left>17</left>
         <top>17</top>
         <width>323</width>
         <height>323</height>
         <texture border="10">images/generalslider.png</texture>
-      </control>
+      </control-->
       <control type="label" description="title">
         <centerleft>177</centerleft>
-        <top>310</top>
+        <top>320</top>
         <width>360</width>
         <align>center</align>
+		<textcolor>homelabelFO</textcolor>
+		<shadowcolor>-</shadowcolor>
         <label>$INFO[ListItem.label]</label>
-      </control>
+      </control>	
+	 </control>  
     </focusedlayout>
   </include>
   <include name="Left_Panel_Addons">

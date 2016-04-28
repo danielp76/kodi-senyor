@@ -37,11 +37,9 @@
           </control>
           <control type="list" id="450">
             <!--width>902</width>
-            <height>891</height-->
-			
+            <height>891</height-->		
             <width>802</width>
-            <height>880</height>			
-			
+            <height>880</height>					
             <onleft>9000</onleft>
             <onright>60</onright>
             <onup>450</onup>
@@ -119,7 +117,7 @@
           <width>802</width>
           <height>885</height>
           <onleft>9000</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <onup>451</onup>
           <ondown>451</ondown>
           <pagecontrol>60</pagecontrol>
@@ -202,7 +200,7 @@
         <width>765</width>
         <height>650</height>
         <fadetime>200</fadetime>
-        <texture>$INFO[ListItem.Icon]</texture>
+        <texture>$VAR[filebrowserthumb]</texture>
         <aspectratio>keep</aspectratio>
       </control>
       <control type="image" description="Item Thumb">
@@ -210,7 +208,7 @@
         <width>765</width>
         <height>650</height>
         <fadetime>200</fadetime>
-        <texture flipx="true">$INFO[ListItem.Icon]</texture>
+        <texture flipx="true">$VAR[filebrowserthumb]</texture>
         <aspectratio>keep</aspectratio>
       </control>
     </control>
@@ -260,6 +258,7 @@
       <label>$INFO[ListItem.Label]</label>
     </control>
     <control type="scrollbar" id="60">
+	  <visible>Skin.HasSetting(Scrollbars_Active)</visible>
       <left>51r</left>
       <top>147</top>
       <height>882</height>

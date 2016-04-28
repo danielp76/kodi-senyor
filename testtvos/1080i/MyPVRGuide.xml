@@ -416,8 +416,8 @@
                         <height>888</height>
                         <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                         <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                        <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                        <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                        <onright condition="Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                        <onright condition="!Skin.HasSetting(Scrollbars_Passive)">noop</onright>
                         <onup>16</onup>
                         <ondown>16</ondown>
                         <pagecontrol>60</pagecontrol>
@@ -528,6 +528,7 @@
                     </control>
                 </control>
                 <control type="scrollbar" id="60">
+					<visible>Skin.HasSetting(Scrollbars_Active)</visible>
                     <left>39r</left>
                     <top>135</top>
                     <height>870</height>
@@ -561,8 +562,8 @@
                         <height>888</height>
                         <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                         <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                        <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                        <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                        <onright condition="Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                        <onright condition="!Skin.HasSetting(Scrollbars_Passive)">noop</onright>
                         <onup>16</onup>
                         <ondown>16</ondown>
                         <pagecontrol>60</pagecontrol>
@@ -679,6 +680,7 @@
                     <texture>lines/LineV.png</texture>
                 </control-->
                 <control type="scrollbar" id="60">
+					<visible>Skin.HasSetting(Scrollbars_Active)</visible>
                     <left>39r</left>
                     <top>135</top>
                     <height>870</height>

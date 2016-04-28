@@ -110,6 +110,7 @@
       <width>900</width>
     </control>
     <control type="scrollbar" id="60">
+	  <visible>Skin.HasSetting(Scrollbars_Active)</visible>
       <left>45r</left>
       <top>165</top>
       <height>825</height>

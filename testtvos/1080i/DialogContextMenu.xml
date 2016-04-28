@@ -24,9 +24,17 @@
 	  <visible>System.HasAddon(script.cinema.experience) + Container.Content(Movies)</visible>
       <width>480</width>
       <height>60</height>
-	<label>31061</label>
-	<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
+	  <label>31061</label>
+	  <onclick>XBMC.RunScript(script.cinema.experience)</onclick>
 	</control>
+	<control type="button" id="1501">
+	  <visible>Skin.HasSetting(ViewsMenuOff)</visible>	
+	  <!--visible>Container.Content(Movies)</visible-->
+	  <width>480</width>
+	  <height>60</height>
+	  <label>$LOCALIZE[24140]: $INFO[Container.Viewmode]</label>
+	  <onclick>Container.NextViewMode</onclick>
+	</control>			
     </control>
     <control type="button" id="1000" description="Buttons">
       <animation effect="zoom" time="120" start="100" end="110" center="auto" tween="Back" easing="Out">Focus</animation>

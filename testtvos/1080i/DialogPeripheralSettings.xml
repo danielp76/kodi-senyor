@@ -42,6 +42,7 @@
         <ondown>28</ondown>
       </control>
       <control type="scrollbar" id="60">
+		<visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <left>987</left>
         <top>105</top>
         <width>36</width>

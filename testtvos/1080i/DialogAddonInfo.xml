@@ -132,9 +132,9 @@
           <label>24054</label>
           <width>260</width>
         </control>
-        <control type="button" id="11" description="rollback">
+        <control type="radiobutton" id="13" description="update on/off">
           <animation effect="zoom" time="120" start="100" end="120" center="auto" tween="Back" easing="Out">Focus</animation>
-          <label>24048</label>
+          <label> </label>
           <width>260</width>
         </control>
         <control type="button" id="12" description="start">

@@ -223,6 +223,7 @@
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="60">
+						<visible>Skin.HasSetting(Scrollbars_Active)</visible>
                         <left>1900</left>
                         <top>0</top>
                         <width>8</width>

@@ -22,13 +22,13 @@
 			<control type="label" description="Clock">		
 				<visible>!Skin.HasSetting(ShowClock) + !System.Date(04-01,04-01) + Container(9000).Row(0)</visible>
 				<right>30</right>
-				<top>20</top>
+				<top>40</top>
 				<width>560</width>
 				<height>30</height>
 				<align>right</align>
 				<font>size30</font>
+				<textcolor>ShelfTopLabelFO</textcolor>
 				<shadowcolor>-</shadowcolor>
-				<textcolor>textcolor4</textcolor>
 				<label>$INFO[System.Date] • $INFO[System.Time]</label>
 			</control>						
             <control type="image" description="Home ICON Banner">
@@ -63,32 +63,202 @@
                 <include>right_listpanel_unfocused</include>
             </control>		
 		  </control>		  
-        </control>		
+        </control>			
 		<control type="videowindow" description="Homescreen Video Preview">
 			<width>1920</width>
 			<height>1080</height>
 			<visible>Window.IsActive(Home.xml) + Player.HasVideo</visible>
 			<aspectratio>scale</aspectratio>
-		</control>		
-        <control type="button" id="9009">
+		</control>	
+        <control type="label" description="Shelf Label">
+			<visible>!Control.HasFocus(9009) + Control.HasFocus(9000) + !Player.HasVideo</visible>		
+			<animation effect="fade" end="100" delay="200" time="220">Visible</animation>
+			<animation condition="Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(313)" effect="zoom" time="200" start="100" end="108" center="200,50" tween="Back" easing="Out">Conditional</animation>				
+			<!--animation effect="fade" end="0" time="100">Hidden</animation-->	
+			<!--animation condition="Control.HasFocus(311) | Control.HasFocus(312)" effect="slide" start="0,0" end="0,-30" time="60">Conditonal</animation-->				
+			<left>98</left>
+			<top>38</top>
+			<height>30</height>
+			<width>750</width>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>size30</font>
+			<textcolor>ShelfTopLabelNF</textcolor>
+			<shadowcolor>-</shadowcolor>
+			<label>$VAR[shelflabel]</label>
+        </control>
+        <control type="label" description="Shelf Label">
+			<visible>!Control.HasFocus(9009) + !Control.HasFocus(9000) + !Player.HasVideo</visible>		
+			<animation effect="fade" end="100" delay="200" time="220">Visible</animation>
+			<animation condition="Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(313)" effect="zoom" time="200" start="100" end="108" center="200,50" tween="Back" easing="Out">Conditional</animation>				
+			<!--animation effect="fade" end="0" time="100">Hidden</animation-->	
+			<!--animation condition="Control.HasFocus(311) | Control.HasFocus(312)" effect="slide" start="0,0" end="0,-30" time="60">Conditonal</animation-->				
+			<left>98</left>
+			<top>38</top>
+			<height>30</height>
+			<width>750</width>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>size30</font>
+			<textcolor>ShelfTopLabelFO</textcolor>
+			<shadowcolor>-</shadowcolor>
+			<label>$VAR[shelflabel]</label>
+        </control>		
+        <!--control type="button" id="9009">
             <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
             <left>0</left>
             <top>15</top>
             <width>34</width>
             <height>34</height>
             <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
-            <!--MOVIES-->
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
-            <!--TVSHOWS-->
             <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
             <onup>noop</onup>
             <ondown condition="Control.IsVisible(311)">311</ondown>
             <ondown condition="Control.IsVisible(312)">312</ondown>
             <onleft>noop</onleft>
             <onright>noop</onright>
-        </control>
+        </control-->		
+		<control type="list" id="9009" description="Shelf Menu">
+            <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>		
+			<top>38</top>
+			<width>1200</width>
+			<height>30</height>
+			<onleft>9006</onleft>
+			<onright>9006</onright>
+			<onup>noop</onup>
+			<align>left</align>
+			<ondown condition="Control.IsVisible(311)">311</ondown>
+			<ondown condition="Control.IsVisible(312)">312</ondown>
+			<ondown condition="Control.IsVisible(313)">313</ondown>			
+			<orientation>horizontal</orientation>	
+			<itemlayout width="360" height="30">
+			  <control type="label" description="Main Label-MOVIE">	
+				<visible>Control.IsVisible(311)</visible>
+				<left>88</left>
+				<height>30</height>
+				<width>340</width>
+				<align>center</align>
+				<font>size30</font>
+				<textcolor>ShelfTopLabelNF</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			  </control>
+			  <control type="label" description="Main Label-TVSHOW">	
+				<visible>Control.IsVisible(312)</visible>
+				<left>88</left>
+				<height>30</height>
+				<width>340</width>
+				<align>center</align>
+				<font>size30</font>
+				<textcolor>ShelfTopLabelNF</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			  </control>	  
+			  <control type="label" description="Main Label-MUSIC">	
+				<visible>Control.IsVisible(313)</visible>
+				<left>88</left>
+				<height>30</height>
+				<width>340</width>
+				<align>center</align>
+				<font>size30</font>
+				<textcolor>ShelfTopLabelNF</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			  </control>			  
+			</itemlayout>
+			<focusedlayout width="360" height="30">
+				<control type="label" description="Main Label-MOVIE">
+					<visible>Control.IsVisible(311)</visible>
+					<animation effect="zoom" time="200" start="100" end="108" center="auto" tween="Back" easing="Out">Focus</animation>				
+					<left>88</left>
+					<height>30</height>
+					<width>340</width>
+					<align>center</align>
+					<font>size30</font>
+					<textcolor>ShelfTopLabelFO</textcolor>
+					<shadowcolor>-</shadowcolor>
+				  <label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label" description="Main Label-TVSHOW">
+					<visible>Control.IsVisible(312)</visible>
+					<animation effect="zoom" time="200" start="100" end="108" center="auto" tween="Back" easing="Out">Focus</animation>				
+					<left>88</left>
+					<height>30</height>
+					<width>340</width>
+					<align>center</align>
+					<font>size30</font>
+					<textcolor>ShelfTopLabelFO</textcolor>
+					<shadowcolor>-</shadowcolor>
+				  <label>$INFO[ListItem.Label]</label>
+				</control>	
+				<control type="label" description="Main Label-MUSIC">
+					<visible>Control.IsVisible(313)</visible>
+					<animation effect="zoom" time="200" start="100" end="108" center="auto" tween="Back" easing="Out">Focus</animation>				
+					<left>88</left>
+					<height>30</height>
+					<width>340</width>
+					<align>center</align>
+					<font>size30</font>
+					<textcolor>ShelfTopLabelFO</textcolor>
+					<shadowcolor>-</shadowcolor>
+				  <label>$INFO[ListItem.Label]</label>
+				</control>				
+			</focusedlayout>
+			<content>			
+			  <item id="10" description="Recently added-MOVIES">	
+				<visible>Control.IsVisible(311)</visible>
+				<label>$LOCALIZE[20386]</label>
+				<onclick>Skin.SetString(moviesshelf,)</onclick>
+			  </item>
+			  <item id="20" description="Random-MOVIES">	
+				<visible>Control.IsVisible(311)</visible>			  
+				<label>$LOCALIZE[590]</label>
+				<onclick>Skin.SetString(moviesshelf,RND)</onclick>				
+			  </item>
+			  <!--item id="30" description="Recommended-MOVIES">	
+				<visible>Control.IsVisible(311)</visible>			  
+				<label>$LOCALIZE[31048]</label>
+				<onclick>Skin.SetString(moviesshelf,WL)</onclick>
+			  </item-->  
+			  <item id="11" description="Recently added-TV">	
+				<visible>Control.IsVisible(312)</visible>
+				<label>$LOCALIZE[20387]</label>
+				<onclick>Skin.SetString(tvshowshelf,)</onclick>
+			  </item>
+			  <item id="21" description="Random-TV">	
+				<visible>Control.IsVisible(312)</visible>			  
+				<label>$LOCALIZE[590]</label>
+				<onclick>Skin.SetString(tvshowshelf,RND)</onclick>				
+			  </item>
+			  <item id="12" description="Recently added-MUSIC">	
+				<visible>Control.IsVisible(313)</visible>
+				<label>$LOCALIZE[20387]</label>
+				<onclick>Skin.SetString(musicShelf,)</onclick>
+			  </item>
+			  <item id="22" description="Random-MUSIC">	
+				<visible>Control.IsVisible(313)</visible>			  
+				<label>$LOCALIZE[590]</label>
+				<onclick>Skin.SetString(musicShelf,RND)</onclick>				
+			  </item>		  
+			  <!--item id="31" description="Recommended-TV">	
+				<visible>Control.IsVisible(312)</visible>			  
+				<label>$LOCALIZE[31048]</label>
+				<onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+			  </item-->			  		  
+			  <!--item id="1" description="Testing1">			  			  
+				<label>$VAR[shelflabel]</label>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+			  </item>			  	  
+			  <item id="2" description="Testing1">			  			  
+				<label>$VAR[shelfchoose]</label>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+			  </item-->			  			  			 		  
+			</content>
+		</control>			
         <control type="panel" id="9000" description="ICONE">
             <animation condition="!Container(9000).Row(0)" effect="slide" start="0,0" end="0,-720" time="220">Conditonal</animation>	
             <animation condition="[![Container(9000).Row(0) | Container(9000).Row(1) | Container(9000).Row(2)]]" effect="slide" start="0,0" end="0,-580" time="220">Conditonal</animation>	
@@ -107,8 +277,8 @@
             <itemlayout height="290" width="360">
                 <control type="image" description="shade_base">
                     <centerleft>180</centerleft>
-                    <width>360</width>
-                    <height>250</height>
+                    <width>350</width>
+                    <height>236</height>
                     <texture>icons/iconbase.png</texture>
                 </control>
                 <control type="image" description="color base">
@@ -136,24 +306,24 @@
                 </control>
                 <control type="image" description="THMBS weather">
                     <centerleft>180</centerleft>
-                    <top>27</top>
-                    <width>287</width>
-                    <height>179</height>
+                    <top>42</top>
+                    <width>257</width>
+                    <height>160</height>
                     <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>				
                 <control type="label" description="label">
-					<visible>!Player.HasVideo</visible>
+					<visible>!Player.HasVideo + !Skin.HasSetting(NoFocusNoLabel)</visible>
                     <!--animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation-->
                     <animation effect="fade" start="100" end="0" time="100">unFocus</animation>					
                     <centerleft>180</centerleft>
-                    <top>234</top>
+                    <top>220</top>
                     <width>350</width>
                     <height>24</height>
                     <font>size27</font>
                     <align>center</align>
 					<scroll>false</scroll>
-                    <textcolor>textcolor3</textcolor>
+                    <textcolor>homelabelNF</textcolor>
                     <label>$INFO[ListItem.label]</label>
                 </control>				
             </itemlayout>
@@ -164,9 +334,10 @@
 					<include condition="!Skin.HasSetting(ATV3select)">ATV4select</include>										
                     <control type="image" description="shade_base">
                         <centerleft>180</centerleft>
-                        <width>360</width>
-                        <height>250</height>
-                        <texture>icons/iconbase.png</texture>
+						<top>20</top>
+                        <width>340</width>
+                        <height>246</height>
+                        <texture>icons/iconshadow.png</texture>
                     </control>
                     <control type="image" description="color base">
                         <centerleft>180</centerleft>
@@ -192,10 +363,10 @@
                         <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
                     </control>
                     <control type="image" description="THMBS weather">
-                        <centerleft>180</centerleft>
-                        <top>27</top>
-                        <width>287</width>
-                        <height>179</height>
+						<centerleft>180</centerleft>
+						<top>42</top>
+						<width>257</width>
+						<height>160</height>
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -205,13 +376,13 @@
                     <animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
                     <centerleft>180</centerleft>
-                    <top>234</top>
+                    <top>236</top>
                     <width>368</width>
                     <height>24</height>
                     <font>size27</font>
                     <align>center</align>
 					<scroll>true</scroll>
-                    <textcolor>textcolor4</textcolor>
+                    <textcolor>homelabelFO</textcolor>
                     <label>[B]$INFO[ListItem.label][/B]</label>
                 </control>
             </focusedlayout>
@@ -287,11 +458,11 @@
                 </item>
                 <item id="345">
                     <visible>!Skin.HasSetting(hidewtr)</visible>
-                    <property name="weatherthumb">$INFO[Weather.Conditions]</property>
+                    <property name="weatherthumb">$INFO[Window(weather).Property(Current.FanartCode),weathershelf/,.png]</property>
                     <label>$INFO[Weather.Temperature]</label>
-                    <property name="color">images/White.png</property>
+                    <property name="color">icons/teak.png</property>
                     <onclick>ActivateWindow(MyWeather)</onclick>
-                </item>				
+                </item>	
                 <item id="344">
                     <visible>!Skin.HasSetting(hidepic)</visible>
                     <label>1</label>
@@ -701,12 +872,12 @@
                     <label>$INFO[MusicPlayer.Album]</label>
                 </control>
             </control>
-        </control>
-        <control type="label" description="Top Label">
+        </control>	
+        <!--control type="label" description="Top Label">
             <include>ShelfFade</include>
             <include>ShelfTitle</include>
             <label>$VAR[shelflabel]</label>
-        </control>
+        </control-->	
       </control>		
     </controls>
 </window>

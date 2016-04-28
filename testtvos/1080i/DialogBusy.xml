@@ -13,7 +13,8 @@
 		  <top>0</top>
 		  <width>1920</width>
 		  <height>1080</height>
-		  <texture>busy/BusyBG.png</texture>
+		  <!--texture>busy/BusyBG.png</texture-->
+		  <texture colordiffuse="FFFFFFFF" diffuse="busy/BusyBG.png">$VAR[OtherBG]</texture>			  		  
 		  <aspectratio>stretch</aspectratio>
 		</control>
 		<control type="group">

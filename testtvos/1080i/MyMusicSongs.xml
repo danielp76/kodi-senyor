@@ -19,7 +19,7 @@
           <width>802</width>
           <height>891</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <onup>50</onup>
           <ondown>50</ondown>
           <pagecontrol>60</pagecontrol>
@@ -73,6 +73,7 @@
         </control>
       </control>
       <control type="scrollbar" id="60">
+		<visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <left>51r</left>
         <top>147</top>
         <height>882</height>
@@ -95,7 +96,7 @@
           <width>802</width>
           <height>888</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <onup>51</onup>
           <ondown>51</ondown>
           <pagecontrol>60</pagecontrol>
@@ -110,6 +111,7 @@
       </control>
 
       <control type="scrollbar" id="60">
+		<visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <left>51r</left>
         <top>135</top>
         <height>870</height>
@@ -130,7 +132,7 @@
           <onup>noop</onup>
           <ondown>noop</ondown>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>
@@ -257,6 +259,7 @@
         <aspectratio>stretch</aspectratio>
       </control-->
       <control type="scrollbar" id="60">
+	    <visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <left>45r</left>
         <top>219</top>
         <height>660</height>
@@ -377,6 +380,7 @@
         </control>
       </control>
       <control type="scrollbar" id="60">
+		<visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <visible>true</visible>
         <animation effect="fade" delay="200" time="300">VisibleChange</animation>
         <left>98</left>

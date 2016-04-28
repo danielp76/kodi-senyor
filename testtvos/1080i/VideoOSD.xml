@@ -212,14 +212,14 @@
                         <control type="image">
                             <width>98</width>
                             <height>98</height>
-                            <texture>$INFO[ListItem.thumb]</texture>
+                            <texture colordiffuse="seekbuttonNF">$INFO[ListItem.thumb]</texture>
                         </control>
                     </itemlayout>
                     <focusedlayout width="70" height="70">
                         <control type="image">
                             <width>98</width>
                             <height>98</height>
-                            <texture>$INFO[ListItem.label]</texture>
+                            <texture colordiffuse="seekbuttonFO">$INFO[ListItem.label]</texture>
                         </control>
                     </focusedlayout>
                     <content>

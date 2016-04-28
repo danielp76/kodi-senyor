@@ -21,7 +21,7 @@
           <width>802</width>
           <height>888</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <onup>50</onup>
           <ondown>50</ondown>
           <pagecontrol>60</pagecontrol>
@@ -34,6 +34,7 @@
         </control>      
       </control>
       <control type="scrollbar" id="60">
+		<visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <left>51r</left>
         <top>135</top>
         <height>870</height>
@@ -62,7 +63,7 @@
           <width>802</width>
           <height>891</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <onup>52</onup>
           <ondown>52</ondown>
           <pagecontrol>60</pagecontrol>
@@ -138,6 +139,7 @@
         </control>
       </control>
       <control type="scrollbar" id="60">
+		<visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <left>51r</left>
         <top>147</top>
         <height>882</height>
@@ -163,8 +165,8 @@
           <height>1080</height>
           <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
           <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">noop</onright>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
           <onup>53</onup>
           <ondown>53</ondown>
           <preloaditems>4</preloaditems>
@@ -261,11 +263,12 @@
         </control>
       </control>
       <control type="scrollbar" id="60">
+		<visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <left>45r</left>
         <top>219</top>
         <height>660</height>
         <onleft>53</onleft>
-        <onright>9000</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group">
@@ -489,6 +492,7 @@
         </content>
       </control>
       <control type="scrollbar" id="60">
+		<visible>Skin.HasSetting(Scrollbars_Active)</visible>
         <animation effect="fade" delay="200" time="300">VisibleChange</animation>
         <left>198</left>
         <top>1038</top>

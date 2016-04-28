@@ -87,7 +87,7 @@
           <onup>11</onup>
           <ondown>11</ondown>
           <onleft>noop</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <pagecontrol>60</pagecontrol>
           <scrolltime>200</scrolltime>
           <itemlayout height="51" width="1700">
@@ -276,6 +276,7 @@
           </focusedlayout>
         </control>
         <control type="scrollbar" id="60">
+		  <visible>Skin.HasSetting(Scrollbars_Active)</visible>
           <left>1780</left>
           <top>60</top>
           <height>480</height>

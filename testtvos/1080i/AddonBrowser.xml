@@ -13,8 +13,8 @@
                 <width>802</width>
                 <height>891</height>
                 <onleft>9000</onleft>
-                <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
-                <onright condition="!Skin.HasSetting(Scrollbars_Active)">9000</onright>
+                <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+                <onright>noop</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -44,7 +44,7 @@
                         <align>right</align>
                         <font>size27</font>
                         <scroll>false</scroll>
-                        <textcolor>Grey2</textcolor>
+                        <textcolor>detailsNF</textcolor>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
@@ -78,7 +78,7 @@
                             <width>300</width>
                             <align>right</align>
                             <font>size27</font>
-                            <textcolor>Grey</textcolor>
+                            <textcolor>detailsFO</textcolor>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </control>
@@ -86,6 +86,7 @@
             </control>
         </control>
         <control type="scrollbar" id="60">
+			<visible>Skin.HasSetting(Scrollbars_Active)</visible>
             <left>39r</left>
             <top>135</top>
             <height>870</height>

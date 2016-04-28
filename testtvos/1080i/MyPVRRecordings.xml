@@ -6,7 +6,7 @@
     <backgroundcolor>Background</backgroundcolor>
     <include>OpenClose</include>
     <controls>
-        <include>Background</include>
+		<include>Background</include> 
         <control type="label" id="29">
             <description>passes the values up one level</description>
             <visible>False</visible>
@@ -55,8 +55,8 @@
                     <width>802</width>
                     <height>888</height>
                     <onleft>9000</onleft>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">noop</onright>
                     <onup>13</onup>
                     <ondown>13</ondown>
                     <pagecontrol>60</pagecontrol>
@@ -155,6 +155,7 @@
                 <texture>lines/LineV.png</texture>
             </control>
             <control type="scrollbar" id="60">
+				<visible>Skin.HasSetting(Scrollbars_Active)</visible>
                 <left>39r</left>
                 <top>135</top>
                 <height>870</height>

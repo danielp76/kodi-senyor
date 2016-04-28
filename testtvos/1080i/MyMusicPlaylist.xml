@@ -22,7 +22,7 @@
             <width>802</width>
             <height>888</height>
             <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-            <onright condition="!Skin.HasSetting(Scrollbars_Active)">60</onright>
+            <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
             <onup>50</onup>
             <ondown>50</ondown>
             <pagecontrol>60</pagecontrol>
@@ -108,11 +108,10 @@
                 <texture>images/NowPlayingFO.png</texture>
               </control>
             </focusedlayout>
-          </control>
-          
+          </control>        
         </control>
-
         <control type="scrollbar" id="60">
+		  <visible>Skin.HasSetting(Scrollbars_Active)</visible>
           <left>51r</left>
           <top>135</top>
           <height>870</height>
