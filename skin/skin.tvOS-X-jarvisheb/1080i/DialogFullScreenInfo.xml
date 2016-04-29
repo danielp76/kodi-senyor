@@ -76,7 +76,7 @@
           <width>1220</width>
           <height>180</height>
           <label>$INFO[VideoPlayer.Plot]</label>
-          <align>justify</align>
+          <align>right</align>
           <autoscroll delay="3000" time="3000" repeat="10000">Window.IsVisible(142)</autoscroll>
           <font>size28</font>
         </control>
