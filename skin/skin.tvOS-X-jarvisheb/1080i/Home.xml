@@ -636,7 +636,7 @@
         </control>
         <control type="group" description="RSS">
             <control type="rss" description="RSS Feed">
-                <visible>!Skin.HasSetting(ShowClock) + !System.Date(04-01,04-01) + Container(9000).Row(0)</visible>
+                <visible>Container(9000).Row(0)</visible>
                 <visible>!Skin.HasSetting(NORSS)</visible>
 				<include>VisibleFade</include>
                 <left>0</left>

@@ -88,7 +88,7 @@ msgstr "Choose Addon for Lyrics Search & Download"
 
 msgctxt "#31019"
 msgid "Enable or Disable Clock On top right of All Pages (not while watching Movies).[CR]Home Menu Will show Time and date."
-msgstr "אפשר או בטל הצגת שעון ושורת RSS"
+msgstr "אפשר שעון"
 
 msgctxt "#31020"
 msgid "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
