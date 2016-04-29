@@ -9,24 +9,25 @@
       <onclick>close</onclick>
     </control>
         <control type="image" description="Background">
-            <posx>151</posx>
-            <top>73</top>
-            <width>1617</width>
+			<centerleft>960</centerleft>
+            <!--posx>151</posx-->
+            <top>540</top>
+            <width>1317</width>
             <height>340</height>
-			<include>seekbar_bkgd</include>			
+			<texture colordiffuse="CCEEEEEE" diffuse="images/weathersingle.png">$VAR[OtherBG]</texture>			
         </control>
     <control type="group">
-      <control type="image">
+      <!--control type="image">
         <top>540</top>
         <left>1580</left>
         <width>250</width>
         <height>350</height>
         <texture>$INFO[Player.Art(poster)]$INFO[Player.Art(tvshow.poster)]</texture>
         <aspectratio align="left">keep</aspectratio>
-      </control>
+      </control-->
       <control type="group">
         <animation effect="fade" time="200">VisibleChange</animation>
-        <top>660</top>
+        <top>560</top>
         <control type="label" description="Main label">
           <visible>VideoPlayer.Content(MusicVideos)</visible>
           <include>FullscreenInfoLabel</include>
@@ -70,17 +71,71 @@
           <label>$INFO[VideoPlayer.Title]</label>
         </control>
         <control type="textbox">
-          <left>400</left>
-          <top>100</top>
-          <width>1120</width>
-          <height>170</height>
+          <centerleft>960</centerleft>
+          <top>102</top>
+          <width>1220</width>
+          <height>180</height>
           <label>$INFO[VideoPlayer.Plot]</label>
           <align>justify</align>
           <autoscroll delay="3000" time="3000" repeat="10000">Window.IsVisible(142)</autoscroll>
-          <font>size30</font>
+          <font>size28</font>
         </control>
-      </control>
-      <control type="grouplist">
+      </control>  
+	  <control type="grouplist">
+		<centerleft>960</centerleft>
+		<top>630</top>
+		<height>50</height>
+		<width>1000</width>
+		<itemgap>5</itemgap>
+		<align>center</align>
+		<orientation>horizontal</orientation>
+		<control type="label">
+			<visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
+			<height>25</height>
+			<width>auto</width>
+			<font>size30</font>
+			<align>center</align>
+			<textcolor>50details</textcolor>
+			<label>[UPPERCASE]$INFO[VideoPlayer.VideoResolution][/UPPERCASE]</label>
+		</control>
+		<control type="label">
+			<visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+			<height>25</height>
+			<width>auto</width>
+			<font>size30</font>
+			<align>center</align>
+			<textcolor>50details</textcolor>
+			<label>[UPPERCASE]$VAR[audiochannels,• ][/UPPERCASE]</label>
+		</control>
+		<control type="label">
+			<visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+			<height>25</height>
+			<width>auto</width>
+			<font>size30</font>
+			<align>center</align>
+			<textcolor>50details</textcolor>
+			<label>[UPPERCASE]$INFO[VideoPlayer.AudioCodec,• ][/UPPERCASE]</label>
+		</control>
+		<control type="label">
+			<visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
+			<height>25</height>
+			<width>auto</width>
+			<font>size30</font>
+			<align>center</align>
+			<textcolor>50details</textcolor>
+			<label>[UPPERCASE]$INFO[VideoPlayer.VideoCodec,• ][/UPPERCASE]</label>
+		</control>
+		<control type="label">
+			<visible>!IsEmpty(VideoPlayer.FileExtension)</visible>
+			<height>25</height>
+			<width>auto</width>
+			<font>size30</font>
+			<align>center</align>
+			<textcolor>50details</textcolor>
+			<label>[UPPERCASE]$INFO[VideoPlayer.FileExtension,• ][/UPPERCASE]</label>
+		</control>					
+	  </control> 
+      <!--control type="grouplist">
         <left>60</left>
         <width>1800</width>
         <top>590</top>
@@ -110,7 +165,7 @@
           <width>130</width>
           <texture>$INFO[VideoPlayer.AudioCodec,badges/audio/,.png]</texture>
         </control>
-      </control>
+      </control-->  
     </control>
     <control type="image">
       <left>110</left>
