@@ -144,13 +144,13 @@
 					</focusedlayout>
                     <content>
                         <item id="1013" description="VAddons">
-                            <visible>!Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
+                            <visible>!Skin.HasSetting(hidevaddons)</visible>
                             <thumb>special://skin/icons/vaddons.png</thumb>
                             <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
                             <onclick>Skin.ToggleSetting(hidevaddons)</onclick>
                         </item>
                         <item id="1013" description="Movies">
-                            <visible>Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
+                            <visible>Skin.HasSetting(hidevaddons)</visible>
                             <thumb>icons/off.png</thumb>
 							<property name="color">special://skin/icons/vaddons.png</property>
                             <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
