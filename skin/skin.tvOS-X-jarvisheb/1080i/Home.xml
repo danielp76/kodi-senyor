@@ -214,14 +214,7 @@
                     <label>[B]$INFO[ListItem.label][/B]</label>
                 </control>
             </focusedlayout>
-            <content>
-                <item id="355">
-                    <visible>!Skin.HasSetting(hidevaddons)</visible>
-                    <thumb>special://skin/icons/vaddons.png</thumb>
-                    <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
-                    <onclick>ActivateWindow(Videos,Addons)</onclick>
-                   <onclick>ActivateWindow(Videos,Addons)</onclick>
-                </item>				
+            <content>               		
                 <item id="340">
                     <visible>!Skin.HasSetting(hidemovie)</visible>
                     <label>342</label>
@@ -236,19 +229,61 @@
                     <onclick condition="Library.HasContent(TVShows)">ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
                     <onclick condition="!Library.HasContent(TVShows)">ActivateWindow(Videos,root)</onclick>
                 </item>			
-                <item id="342">
+                <item id="343">
+                    <visible>!Skin.HasSetting(hideaddon)</visible>
+                    <label>24001</label>
+                    <thumb>special://skin/icons/addons.png</thumb>
+                    <onclick>ActivateWindow(1118)</onclick>
+                </item> 
+                <item id="352">
+                    <visible>!Skin.HasSetting(hidefav)</visible>
+                    <thumb>special://skin/icons/favs.png</thumb>
+                    <label>$LOCALIZE[1036]</label>
+                    <property name="color"></property>
+                    <onclick>ActivateWindow(134)</onclick>
+                </item>						
+                <item id="345">
+                    <visible>!Skin.HasSetting(hidewtr)</visible>
+                    <property name="weatherthumb">$INFO[Weather.Conditions]</property>
+                    <label>$INFO[Weather.Temperature]</label>
+                    <property name="color">special://skin/icons/weather.png</property>
+                    <onclick>ActivateWindow(MyWeather)</onclick>
+                </item>				                				
+                <item id="355">
+					<visible>!Skin.HasSetting(livetvmenu)</visible>>
+                    <label>$LOCALIZE[31059]</label>
+                    <thumb>special://skin/icons/LiveTV.png</thumb>
+                    <onclick>ActivateWindow(1718)</onclick>
+                    <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
+                </item>	
+				<item id="342">
                     <visible>!Skin.HasSetting(hidemusic)</visible>
                     <label>2</label>
                     <thumb>special://skin/icons/music.png</thumb>
                     <onclick>ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
                     <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
                 </item>
-                <item id="343">
-                    <visible>!Skin.HasSetting(hideaddon)</visible>
-                    <label>24001</label>
-                    <thumb>special://skin/icons/addons.png</thumb>
-                    <onclick>ActivateWindow(1118)</onclick>
-                </item>
+				<item id="344">
+                    <visible>!Skin.HasSetting(hidepic)</visible>
+                    <label>1</label>
+                    <thumb>special://skin/icons/photos.png</thumb>
+                    <onclick>ActivateWindow(2)</onclick>
+                </item>                
+                <item id="355">
+					<visible>Skin.HasSetting(livetvmenu)</visible>>
+                    <label>$VAR[LivetvLabel]</label>
+                    <thumb>$VAR[LivetvIcon]</thumb>	
+					<onclick condition="StringCompare(Skin.String(livetv),tvchannels)">ActivateWindowAndFocus(TVChannels)</onclick>
+                    <onclick condition="StringCompare(Skin.String(livetv),epgguide)">ActivateWindow(TVGuide)</onclick>
+                    <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
+                </item>	
+                <item id="355">
+                    <visible>!Skin.HasSetting(hidevaddons)</visible>
+                    <thumb>special://skin/icons/vaddons.png</thumb>
+                    <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
+                    <onclick>ActivateWindow(Videos,Addons)</onclick>
+                   <onclick>ActivateWindow(Videos,Addons)</onclick>
+                </item>	
                 <item id="621" description="Shelf Favourite1">
                     <visible>!IsEmpty(Skin.String(HomeFav.101.Label))</visible>
                     <thumb>$INFO[Skin.String(HomeFav.101.Icon)]</thumb>
@@ -283,42 +318,7 @@
                     <label>$INFO[Skin.String(HomeFav.105.Label)]</label>
                     <property name="color">icons/DarkOrange.png</property>
                     <onclick>$INFO[Skin.String(HomeFav.105.Path)]</onclick>
-                </item>
-                <item id="345">
-                    <visible>!Skin.HasSetting(hidewtr)</visible>
-                    <property name="weatherthumb">$INFO[Weather.Conditions]</property>
-                    <label>$INFO[Weather.Temperature]</label>
-                    <property name="color">special://skin/icons/weather.png</property>
-                    <onclick>ActivateWindow(MyWeather)</onclick>
                 </item>				
-                <item id="344">
-                    <visible>!Skin.HasSetting(hidepic)</visible>
-                    <label>1</label>
-                    <thumb>special://skin/icons/photos.png</thumb>
-                    <onclick>ActivateWindow(2)</onclick>
-                </item>
-                <item id="352">
-                    <visible>!Skin.HasSetting(hidefav)</visible>
-                    <thumb>special://skin/icons/favs.png</thumb>
-                    <label>$LOCALIZE[1036]</label>
-                    <property name="color"></property>
-                    <onclick>ActivateWindow(134)</onclick>
-                </item>						
-                <item id="355">
-					<visible>!Skin.HasSetting(livetvmenu)</visible>>
-                    <label>$LOCALIZE[31059]</label>
-                    <thumb>special://skin/icons/LiveTV.png</thumb>
-                    <onclick>ActivateWindow(1718)</onclick>
-                    <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
-                </item>	
-                <item id="355">
-					<visible>Skin.HasSetting(livetvmenu)</visible>>
-                    <label>$VAR[LivetvLabel]</label>
-                    <thumb>$VAR[LivetvIcon]</thumb>	
-					<onclick condition="StringCompare(Skin.String(livetv),tvchannels)">ActivateWindowAndFocus(TVChannels)</onclick>
-                    <onclick condition="StringCompare(Skin.String(livetv),epgguide)">ActivateWindow(TVGuide)</onclick>
-                    <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
-                </item>		
                 <item id="355">
                     <label>$INFO[Pvr.NowRecordingTitle]</label>
                     <thumb>special://skin/icons/LiveTVrec.png</thumb>
