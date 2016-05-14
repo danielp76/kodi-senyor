@@ -340,4 +340,4 @@ msgstr "ערוצים"
 
 msgctxt "#31086"
 msgid "skin icons edit"
-msgstr "החלפת ערכות עיצוב דרך senyor tools"
+msgstr "החלפת ערכות עיצוב"

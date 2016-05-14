@@ -86,7 +86,7 @@
           </item>
 		  <item id="8" description="skin icons edit">
             <label>31086</label>
-            <onclick>ActivateWindow(10001,plugin://plugin.program.senyortools)</onclick>
+            <onclick>ActivateWindow(10001,plugin://plugin.program.tvos_themes)</onclick>
           </item>
           <item id="18" description="Home Background">	
 			<visible>!IsEmpty(Skin.String(CustomBgHome))</visible>		  
