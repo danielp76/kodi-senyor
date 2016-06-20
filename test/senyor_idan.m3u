@@ -1,0 +1,34 @@
+#EXTM3U
+###########################################################################################
+#EXTINF:11 logo="http://anarchitv.co/TV/Logos/1.png" channel-id="11" epg-id="11" group-title="Israel" tvg-logo="1.png",הערוץ הראשון [B][COLOR lime] ישראל - [/COLOR][/B]
+http://62.90.90.44:1935/iba_channel-511MRepeat/_definst_/smil:channel-511M.smil/media_w441559557_b592000_9814418.m3u8
+#EXTINF:22 logo="http://anarchitv.co/TV/Logos/2.png" aspect-ratio=16:9 channel-id="22" epg-id="22" group-title="Israel" tvg-logo="2.png", ערוץ 22  [B][COLOR lime] ישראל - [/COLOR][/B]
+http://anarchitv.co/tvv/2live1.m3u8
+#EXTINF:10 logo="http://anarchitv.co/TV/Logos/10.png" channel-id="10" epg-id="10" group-title="Israel" tvg-logo="10.png",HD ערוץ 10 [B][COLOR lime] ישראל - [/COLOR][/B]
+http://anarchitv.co/tvv/ch10grabber.m3u8
+#EXTINF:9 logo="http://anarchitv.co/TV/Logos/9.png" channel-id="9" epg-id="9" group-title="Israel" tvg-logo="9.png",ישראל 9 [B][COLOR lime] ישראל - [/COLOR][/B]
+rtmp://89.163.134.104:2000/site/anal911_..........
+#EXTINF:20 logo="http://anarchitv.co/TV/Logos/20.png" channel-id="20" epg-id="20" group-title="Israel" tvg-logo="20.png",ערוץ 20 [B][COLOR lime] ישראל - [/COLOR][/B]
+http://80.244.172.41/ch20Live/ch20-High.m3u8
+#EXTINF:24 logo="http://anarchitv.co/TV/Logos/24.png" channel-id="24" epg-id="24" group-title="Israel" tvg-logo="24.png",ערוץ המוזיקה [B][COLOR lime] ישראל - [/COLOR][/B]
+http://keshethlslive-lh.akamaihd.net/i/24live_1@195271/master.m3u8
+#EXTINF:-1 logo="http://anarchitv.co/TV/Logos/5.png" group-title="Israel" tvg-logo="5.png",ספורט 5 מובייל [B][COLOR lime] ישראל - [/COLOR][/B]
+http://plph-s.vidnt.com:1935/plph_PelSport5HD2Repeat/_definst_/smil:PelSport5HD1.smil/chunklist_w188916038_b1088000.m3u8
+#EXTINF:33 logo="http://anarchitv.co/TV/Logos/33.png" channel-id="33" epg-id="33" group-title="Israel" tvg-logo="33.png",ערוץ 33 [B][COLOR lime] ישראל - [/COLOR][/B]
+http://82.80.192.27/iba_channel-33MRepeat/_definst_/smil:channel-33M.smil/playlist.m3u8
+#EXTINF:333 logo="http://anarchitv.co/TV/Logos/2news.png" channel-id="333" epg-id="333" group-title="Israel" tvg-logo="2news.png",ערוץ חדשות 2 [B][COLOR lime] ישראל - [/COLOR][/B]
+http://keshethlslive-lh.akamaihd.net/i/c2n_1@195269/index_2000_av-p.m3u8?sd=10&rebase=on
+#EXTINF:99 logo="http://anarchitv.co/TV/Logos/99.png" channel-id="99" epg-id="99" group-title="Israel" tvg-logo="99.png",ערוץ הכנסת 99 [B][COLOR lime] ישראל - [/COLOR][/B]
+mmsh://212.235.5.241/knessetlive
+#EXTINF:91 logo="http://anarchitv.co/TV/Logos/meir.png" channel-id="91" epg-id="91" group-title="Israel" tvg-logo="meir.png",ערוץ מאיר [B][COLOR lime] ישראל - [/COLOR][/B]
+http://82.80.198.100:1935/live/live1/playlist.m3u8
+#EXTINF:67 logo="http://anarchitv.co/TV/Logos/hida.png" channel-id="67" epg-id="67" group-title="Israel" tvg-logo="hida.png",ערוץ ההידברות [B][COLOR lime] ישראל - [/COLOR][/B]
+http://w3.013.gostreaming.tv:1935/Hidabrut/smil:myStream.smil/playlist.m3u8
+#EXTINF:66 logo="http://anarchitv.co/TV/Logos/66.png" channel-id="66" epg-id="66" group-title="Israel" tvg-logo="66.png",ערוץ הקבלה [B][COLOR lime] ישראל - [/COLOR][/B]
+http://edge1.il.kab.tv/rtplive/tv66-heb-high.stream/playlist.m3u8
+#EXTINF:-1 logo="http://anarchitv.co/TV/Logos/ישראל%20לנד.png" group-title="Israel" tvg-logo="ישראל%20לנד.png",ILand [B][COLOR lime] ישראל - [/COLOR][/B]
+http://146.185.61.140:1935/live/myStream/playlist.m3u8
+#EXTINF:-1 logo="http://anarchitv.co/TV/Logos/מקור.png" group-title="Israel" tvg-logo="מקור.png",שלום טיוי [B][COLOR lime] ישראל - [/COLOR][/B]
+http://109.68.190.192:1935/israil/israil.stream/playlist.m3u8
+#EXTINF:-1 logo="http://anarchitv.co/TV/Logos/TV7.png" group-title="Israel" tvg-logo="TV7.png",TV 7 [B][COLOR lime] ישראל - [/COLOR][/B]
+rtmp://vod.tv7.fi/tv7-fi/mp4:tv7-fi.stream_360p
