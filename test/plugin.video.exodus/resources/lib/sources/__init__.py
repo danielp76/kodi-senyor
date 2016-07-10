@@ -49,7 +49,7 @@ class sources:
 
             sysplg = True if control.infoLabel('Container.PluginName') in sysloc else False
 
-            syslib = True if '.strm' in str(control.infoLabel('ListItem.FileName')) else False
+            syslib = False #if '.strm' in str(control.infoLabel('ListItem.FileName')) else False
 
             items = self.getSources(title, year, imdb, tvdb, season, episode, tvshowtitle, premiered)
 

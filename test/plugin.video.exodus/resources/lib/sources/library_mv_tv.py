@@ -83,7 +83,7 @@ class source:
                 r = json.loads(r)['result']['movies']
 
                 r = [i for i in r if str(i['imdbnumber']) in ids or title in [cleantitle.get(i['title'].encode('utf-8')), cleantitle.get(i['originaltitle'].encode('utf-8'))]]
-                r = [i for i in r if not i['file'].encode('utf-8').endswith('.strm')][0]
+                #r = [i for i in r if not i['file'].encode('utf-8').endswith('.strm')][0]
 
                 r = control.jsonrpc('{"jsonrpc": "2.0", "method": "VideoLibrary.GetMovieDetails", "params": {"properties": ["streamdetails", "file"], "movieid": %s }, "id": 1}' % str(r['movieid']))
                 r = unicode(r, 'utf-8', errors='ignore')
